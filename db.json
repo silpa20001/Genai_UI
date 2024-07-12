@@ -1,0 +1,97 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": "1. What is the purpose of conducting meta-testing in your assessment process?",
+      "type": "text",
+      "answer": ""
+    },
+    {
+      "id": 2,
+      "question": "2. How do you categorize and manage responses for meta-testing questions about assessment structure?",
+      "type": "textarea",
+      "answer": ""
+    },
+    {
+      "id": 3,
+      "question": "3. Why did you choose to use a select type question for assessing familiarity with meta-testing concepts?",
+      "type": "select",
+      "options": ["To gauge understanding", "To assess depth of knowledge", "To evaluate application skills"],
+      "answer": ""
+    },
+    {
+      "id": 4,
+      "question": "4. What is the preferred method for handling user feedback during meta-testing?",
+      "type": "radio",
+      "options": [
+        "Direct user interviews",
+        "Online surveys",
+        "Focus groups",
+        "Feedback forms"
+      ],
+      "answer": ""
+    },
+    {
+      "id": 5,
+      "question": "5. How do you ensure the clarity and relevance of the questions in your meta-testing process?",
+      "type": "text",
+      "answer": ""
+    },
+    {
+      "id": 6,
+      "question": "6. How do you categorize and manage defects identified during testing?",
+      "type": "select",
+      "options": [
+        "Critical, Major, Minor, Trivial",
+        "High, Medium, Low",
+        "Severity 1, Severity 2, Severity 3",
+        "Showstopper, Blocker, Critical, Major, Minor"
+      ],
+      "answer": ""
+    },
+    
+    {
+      "id": 7,
+      "question": "7. How are responses managed and analyzed for each type of meta-testing question in your assessment?",
+      "type": "text",
+      "answer": ""
+    },
+    {
+      "id": 8,
+      "question": "8. What factors influenced the design of the meta-testing question format to optimize understanding and accuracy of responses?",
+      "type": "textarea",
+      "answer": ""
+    },
+    {
+      "id": 9,
+      "question": "9. Which of the following methods do you use to validate and verify software functionality?",
+      "type": "checkbox",
+      "options": [
+        "Unit testing",
+        "Integration testing",
+        "System testing",
+        "Acceptance testing"
+      ],
+      "answer": []
+    },
+     {
+      "id": 10,
+      "question": "10. What strategies are employed to analyze and interpret the data collected from meta-testing questions effectively?",
+      "type": "textarea",
+      "answer": ""
+    }
+  ],
+  "scorecard": {
+    "score": 75, 
+    "passPercentage": 75,
+    "summary": {
+      "pass": "Congratulations! You have passed the assessment with a score of {score}. Keep up the great work!",
+      "fail": "Unfortunately, you did not pass the assessment. Your score is {score}. Please review the areas for improvement and try again."
+    },
+    "areasForImprovement": [
+      "> Improve time management skills",
+      "> Focus on attention to detail",
+      "> Enhance problem-solving skills"
+    ]
+  }
+}

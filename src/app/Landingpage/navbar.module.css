@@ -1,0 +1,37 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #00a2ed;
+    padding: 1rem;
+  }
+  
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    font-size: 1.6rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-menu li {
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .user-icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .user-icon img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  

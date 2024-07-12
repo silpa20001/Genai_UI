@@ -1,17 +1,33 @@
-import { Assesment } from "@/components/component/assesment";
-import { AssesmentComponent } from "@/components/component/assesment-component";
-import { LandingPage } from "@/components/component/landing-page";
-import { ScoreCard } from "@/components/component/score-card";
+"use client"
+import React, { useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import '../app/Landingpage/styles.module.css';
+import Navbar from './Landingpage/navbar';
+import Sidebar from './Landingpage/sidebar';
+import MainContent from './Landingpage/maincontent';
 
+const App = () => {
+  const [activeSection, setActiveSection] = useState(null);
 
-export default function Home() {
+  const handleSidebarButtonClick = (section: any) => {
+    setActiveSection(section);
+  };
+
   return (
-   <div>
-    {/* <LandingPage /> */}
-    <ScoreCard />
-    {/* <AssesmentComponent /> */}
-    {/* <Assesment /> */}
-
-   </div>
+    <>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+      <div className="wrapper">
+        <Navbar />
+        <div className="content">
+          <Sidebar onButtonClick={handleSidebarButtonClick} />
+          <MainContent activeSection={activeSection} />
+        </div>
+      </div>
+    </>
   );
-}
+};
+
+export default App;
