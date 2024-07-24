@@ -1,97 +1,123 @@
 {
-  "questions": [
+  "questions": {
+    "Q1": {
+      "question": "What is the main purpose of the document?",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Option 3",
+        "d": "Option 4"
+      }
+    },
+    "Q2": {
+      "question": "Who is the intended audience of the document?",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Option 3",
+        "d": "Option 4"
+      }
+    },
+    "Q3": {
+      "question": "What is the key point discussed in the second section?",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Option 3",
+        "d": "Option 4"
+      }
+    },
+    "Q4": {
+      "question": "Which method is recommended for achieving the desired result?",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Option 3",
+        "d": "Option 4"
+      }
+    },
+    "Q5": {
+      "question": "What is the conclusion of the document?",
+      "options": {
+        "a": "Option 1",
+        "b": "Option 2",
+        "c": "Option 3",
+        "d": "Option 4"
+      }
+    }
+  },
+  "Areas of improvement": {
+    "score": {
+      "total_questions": 5,
+      "correct_answers": 2,
+      "percentage_score": 40
+    },
+    "feedback": {
+      "Q1": "The incorrect answer. The correct answer was 'a. Any element in the UI that provides functionality'. You chose 'c. The popularity of the element among users'.",
+      "Q2": "The incorrect answer. The correct answer was 'b. The active element within the document'. You chose 'c. Can be navigated, read, and operated using only a physical keyboard without a mouse or a trackpad'.",
+      "Q4": "The incorrect answer. The correct answer was 'd. Issues related to labels, descriptions that include specific accessibility roles, states, and properties'. You chose 'c. Can be navigated, read, and operated using only a physical keyboard without a mouse or a trackpad'."
+    }
+  },
+  "chat": [
     {
       "id": 1,
-      "question": "1. What is the purpose of conducting meta-testing in your assessment process?",
-      "type": "text",
-      "answer": ""
+      "question": "What is Meta?",
+      "answer": "Meta is a technology company that owns and operates Facebook, Instagram, WhatsApp, and Oculus. It focuses on building social technologies that help people connect, find communities, and grow businesses."
     },
     {
       "id": 2,
-      "question": "2. How do you categorize and manage responses for meta-testing questions about assessment structure?",
-      "type": "textarea",
-      "answer": ""
+      "question": "What is the Metaverse?",
+      "answer": "The Metaverse is a virtual reality space where users can interact with a computer-generated environment and other users. Meta is investing heavily in the development of the Metaverse."
     },
     {
       "id": 3,
-      "question": "3. Why did you choose to use a select type question for assessing familiarity with meta-testing concepts?",
-      "type": "select",
-      "options": ["To gauge understanding", "To assess depth of knowledge", "To evaluate application skills"],
-      "answer": ""
+      "question": "What are Meta's core products?",
+      "answer": "Meta's core products include Facebook, Instagram, WhatsApp, Messenger, and Oculus."
     },
     {
       "id": 4,
-      "question": "4. What is the preferred method for handling user feedback during meta-testing?",
-      "type": "radio",
-      "options": [
-        "Direct user interviews",
-        "Online surveys",
-        "Focus groups",
-        "Feedback forms"
-      ],
-      "answer": ""
+      "question": "How can I learn more about Meta's privacy policies?",
+      "answer": "You can learn more about Meta's privacy policies by visiting their official [Privacy Center](https://www.facebook.com/privacy/explanation)."
     },
     {
       "id": 5,
-      "question": "5. How do you ensure the clarity and relevance of the questions in your meta-testing process?",
-      "type": "text",
-      "answer": ""
+      "question": "What is Facebook?",
+      "answer": "Facebook is a social networking site where users can post comments, share photographs, and links to news or other interesting content on the web, chat live, and watch short-form video."
     },
     {
       "id": 6,
-      "question": "6. How do you categorize and manage defects identified during testing?",
-      "type": "select",
-      "options": [
-        "Critical, Major, Minor, Trivial",
-        "High, Medium, Low",
-        "Severity 1, Severity 2, Severity 3",
-        "Showstopper, Blocker, Critical, Major, Minor"
-      ],
-      "answer": ""
+      "question": "What is Instagram?",
+      "answer": "Instagram is a photo and video-sharing social networking service owned by Meta. Users can upload photos and videos, which can be edited with various filters, organized by hashtags, and tagged by location."
     },
-    
     {
       "id": 7,
-      "question": "7. How are responses managed and analyzed for each type of meta-testing question in your assessment?",
-      "type": "text",
-      "answer": ""
+      "question": "What is WhatsApp?",
+      "answer": "WhatsApp is a free messaging app that allows users to send text messages, voice messages, and video calls. It uses the internet to send messages, images, audio, or video."
     },
     {
       "id": 8,
-      "question": "8. What factors influenced the design of the meta-testing question format to optimize understanding and accuracy of responses?",
-      "type": "textarea",
-      "answer": ""
+      "question": "What is Oculus?",
+      "answer": "Oculus is a brand of virtual reality headsets developed and manufactured by Meta. Oculus devices allow users to experience virtual reality environments for gaming, social interaction, and productivity."
     },
     {
       "id": 9,
-      "question": "9. Which of the following methods do you use to validate and verify software functionality?",
-      "type": "checkbox",
-      "options": [
-        "Unit testing",
-        "Integration testing",
-        "System testing",
-        "Acceptance testing"
-      ],
-      "answer": []
+      "question": "Where can I find the latest news about Meta?",
+      "answer": "You can find the latest news about Meta by visiting their [Newsroom](https://about.fb.com/news/)."
     },
-     {
+    {
       "id": 10,
-      "question": "10. What strategies are employed to analyze and interpret the data collected from meta-testing questions effectively?",
-      "type": "textarea",
-      "answer": ""
-    }
-  ],
-  "scorecard": {
-    "score": 75, 
-    "passPercentage": 75,
-    "summary": {
-      "pass": "Congratulations! You have passed the assessment with a score of {score}. Keep up the great work!",
-      "fail": "Unfortunately, you did not pass the assessment. Your score is {score}. Please review the areas for improvement and try again."
+      "question": "How can developers get involved with Meta's platforms?",
+      "answer": "Developers can get involved with Meta's platforms by visiting the [Meta for Developers](https://developers.facebook.com/) site, which provides resources, tools, and documentation for building on Meta's platforms."
     },
-    "areasForImprovement": [
-      "> Improve time management skills",
-      "> Focus on attention to detail",
-      "> Enhance problem-solving skills"
-    ]
-  }
+    {
+      "id" :11,
+      "question" : "hi",
+      "answer":"Hi, how can I assist you today"
+    },
+    {
+      "id" :12,
+      "question" : "hello",
+      "answer":"Hello, how can I assist you today"
+    }
+  ]
 }

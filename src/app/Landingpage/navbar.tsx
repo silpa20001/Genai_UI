@@ -1,20 +1,24 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './navbar.module.css'
+import Avatar from '@mui/material/Avatar';
+import { deepOrange, deepPurple } from '@mui/material/colors';
 
 const Navbar = () => {
   return (
-    <nav className={styles.navbar}>
-      <ul className={styles['nav-menu']}>
+    <nav className={styles.navbar}> 
+      <ul className='mb-0 pl-0'>
         <li>
-          <Link href="/">Meta</Link>
+          <Link href="/">
+            <img src="/metalogo.svg" alt="User Icon" style={{width: "100px"}} />
+          </Link>
         </li>
-        
+
       </ul>
       <div className={styles['user-icon']}>
-        <Link href="/profile">
-          <img src="/user-icon.svg" alt="User Icon" />
-        </Link>
+        {/* <Link href="/profile" > */}
+        <Avatar alt="Remy Sharp" src="/avatar.webp" />
+        {/* </Link> */}
       </div>
     </nav>
   );

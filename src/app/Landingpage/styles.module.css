@@ -9,6 +9,7 @@
   .content {
     display: flex;
     flex: 1;
+    background-image: radial-gradient( circle 311px at 8.6% 27.9%,  rgba(62,147,252,0.57) 12.9%, rgba(239,183,192,0.44) 91.2% ) !important;
   }
   
   .sidebar {
@@ -20,7 +21,8 @@
     gap: 1rem; /* Add gap between buttons */
     color: #00a2ed;
   }
-  
+
+
   .sidebar .btn {
     width: 100%; /* Full width of the sidebar */
     text-align: center;
@@ -116,3 +118,21 @@
     pointer-events: none; /* Make sure the icon doesn't block text selection/clicks */
   }
   
+
+  .navbar {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .chat-message {
+    display: flex;
+    width: 100%;
+  }
+
+  .user-message {
+    width: 75%;
+  }
+
+  .bot-message {
+    width: 75%;
+  }

@@ -16,6 +16,13 @@
   }
 }
 
+/* @font-face {
+  font-family: 'sans';
+  src: url('../fonts/sans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -24,7 +31,10 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+    font-family: 'sans', sans-serif;
+    transition: all 0.4s ease-in-out;
 }
+
 
 @layer utilities {
   .text-balance {
@@ -41,15 +51,51 @@ body {
 .content {
   display: flex;
   flex: 1;
+  background-image: radial-gradient( circle farthest-corner at 18.7% 37.8%, rgba(225,234,238,0.7) 0%, rgba(250,250,250,0.7) 90% );
 }
 
 .sidebar {
-  width: 200px;
-  background-color: #e4edef;
+  width: 220px;
+  background-color: #fff;
+  margin: 20px 10px;
+  border-radius: 10px;
   padding: 1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem; /* Add gap between buttons */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  transition: transform 0.3s ease-in-out;
+
+}
+
+/* .sidebar-open {
+  padding: 0.5rem 1rem;
+  background-color: #38a0e6;
+  height: fit-content;
+  color: #FFF;
+  border-radius: 10px;
+  transform: rotateZ(90deg);
+  height: 20px;
+} */
+
+.sidebar.closed {
+  transform: translateX(-200%);
+}
+
+.sidebar.hide {
+  display: none !important; 
+}
+
+.content {
+  flex-grow: 1;
+  transition: width 0.3s ease-in-out;
+  /* margin-left: 250px; */
+  /* padding: 20px; */
+  background-color: #f0f0f0;
+}
+
+.content.full-width {
+  margin-left: 0;
 }
 
 .sidebar .btn {
@@ -112,18 +158,26 @@ body {
   word-wrap: break-word; /* Wrap long words */
 }
 
+.chat-message-input {
+  background: #FAFAFA;
+  border: 1px solid #A6A7A6;
+  border-radius: 21.5px;
+  width: 100%;
+}
+
 .search-bar-container {
-  display: flex;
+  margin-top: auto;
+  /* display: flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 1rem;
   position: fixed;
   bottom: 0;
-  left: 200px; /* This assumes sidebar width is 200px */
+  left: 200px; 
   right: 0;
   background: #fff;
   padding: 1rem;
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); */
 }
 
 .search-bar-wrapper {
@@ -158,3 +212,33 @@ body {
  
 }
 
+.user-message {
+  text-align: right;
+  background-color: #e2f1f8; /* Example background color for user messages */
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.bot-message {
+  text-align: left;
+  background-color: #f2f2f2; /* Example background color for bot messages */
+  padding: 5px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+/* HTML: <div class="loader"></div> */
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 15px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+    33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+}
